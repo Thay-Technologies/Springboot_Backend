@@ -1,0 +1,37 @@
+
+type Query {
+getAllEmployees: [EmployeeEntity]
+getEmployeeById(employeeId: Int!): EmployeeEntity
+}
+
+type Mutation {
+    createEmployee(input: EmployeeInput!): EmployeeEntity
+    updateEmployee(employeeId: Int!, input: EmployeeInput!): EmployeeEntity
+    deleteEmployee(employeeId: Int!): EmployeeEntity
+}
+
+input EmployeeInput {
+employeeId:Int
+employeeName: String!
+employeeAge: Int
+employeeGender: String
+employeeDOJ: String
+employeeRemarks: String
+employeeAccruedLeaves: Int
+email: String
+password: String
+roleName: String
+}
+
+type EmployeeEntity {
+employeeId: Int
+employeeName: String
+employeeAge: Int
+employeeGender: String
+employeeDOJ: String
+employeeRemarks: String
+employeeAccruedLeaves: Int
+email: String
+password: String
+roleName: String
+}
