@@ -1,37 +1,54 @@
 
 type Query {
-getAllEmployees: [EmployeeEntity]
-getEmployeeById(employeeId: Int!): EmployeeEntity
+    getAllEmployees: [EmployeeEntity]
+    getEmployeeById(employeeId: Int!): EmployeeEntity
+    getAllHolidays: [HolidayEntity]
+    getHolidayById(holidayId: Int!):HolidayEntity
+
 }
 
 type Mutation {
     createEmployee(input: EmployeeInput!): EmployeeEntity
     updateEmployee(employeeId: Int!, input: EmployeeInput!): EmployeeEntity
     deleteEmployee(employeeId: Int!): EmployeeEntity
+    createHoliday(input:HolidayInput!):HolidayEntity
+    updateHoliday(holidayId:Int!,input :HolidayInput!):HolidayEntity
+    deleteHoliday(holidayId:Int!):HolidayEntity
 }
 
 input EmployeeInput {
-employeeId:Int
-employeeName: String!
-employeeAge: Int
-employeeGender: String
-employeeDOJ: String
-employeeRemarks: String
-employeeAccruedLeaves: Int
-email: String
-password: String
-roleName: String
+    employeeId:Int
+    employeeName: String!
+    employeeAge: Int
+    employeeGender: String
+    employeeDOJ: String
+    employeeRemarks: String
+    employeeAccruedLeaves: Int
+    email: String
+    password: String
+    roleName: String
+}
+input HolidayInput{
+
+    holidayName:String
+    holidayDate:String
 }
 
+
 type EmployeeEntity {
-employeeId: Int
-employeeName: String
-employeeAge: Int
-employeeGender: String
-employeeDOJ: String
-employeeRemarks: String
-employeeAccruedLeaves: Int
-email: String
-password: String
-roleName: String
+    employeeId: Int
+    employeeName: String
+    employeeAge: Int
+    employeeGender: String
+    employeeDOJ: String
+    employeeRemarks: String
+    employeeAccruedLeaves: Int
+    email: String
+    password: String
+    roleName: String
+}
+type HolidayEntity{
+    holidayId:Int
+    holidayName:String
+    holidayDate:String
 }
