@@ -1,7 +1,8 @@
-package com.thay.springbootbackend.service;
+package com.thay.springbootbackend.service.impl;
 
 import com.thay.springbootbackend.entity.EmployeeEntity;
 import com.thay.springbootbackend.repository.EmployeeRepository;
+import com.thay.springbootbackend.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

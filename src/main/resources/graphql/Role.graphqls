@@ -1,0 +1,35 @@
+type Role {
+    roleID: ID!
+    roleName: String!
+    roleStatus: String!
+    roleDescription: String!
+    createdDate: String!
+    ruleRights: String!
+}
+
+extend type Query {
+    getRoleByID(roleID: ID!): Role
+    getAllRoles: [Role]
+}
+
+extend type Mutation {
+    createRole(
+        roleID:ID!
+        roleName: String!
+        roleStatus: String!
+        roleDescription: String!
+        createdDate: String!
+        ruleRights: String!
+    ): Role
+
+    updateRole(
+        roleID: ID!
+        roleName: String
+        roleStatus: String
+        roleDescription: String
+        createdDate: String
+        ruleRights: String
+    ): Role
+
+    deleteRole(roleID: ID!): Role
+}

@@ -1,5 +1,6 @@
 package com.thay.springbootbackend.controller;
 
+import com.thay.springbootbackend.controller.input.HolidayInput;
 import com.thay.springbootbackend.entity.HolidayEntity;
 import com.thay.springbootbackend.service.HolidayService;
 import org.springframework.graphql.data.method.annotation.Argument;
