@@ -1,4 +1,4 @@
-package com.thay.springbootbackend.controller;
+package com.thay.springbootbackend.controller.input;
 
 import com.thay.springbootbackend.entity.HolidayEntity;
 import lombok.Data;
@@ -11,7 +11,6 @@ public class HolidayInput {
 
     public HolidayEntity toHolidayEntity() {
         HolidayEntity holiday = new HolidayEntity();
-
         holiday.setHolidayName(this.holidayName);
         holiday.setHolidayDate(this.holidayDate);
         return holiday;

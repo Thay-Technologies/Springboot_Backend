@@ -1,5 +1,5 @@
 
-package com.thay.springbootbackend.controller;
+package com.thay.springbootbackend.controller.input;
 
 import com.thay.springbootbackend.entity.EmployeeEntity;
 import lombok.Data;

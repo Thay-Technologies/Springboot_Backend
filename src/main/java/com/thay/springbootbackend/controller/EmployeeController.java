@@ -1,5 +1,6 @@
 package com.thay.springbootbackend.controller;
 
+import com.thay.springbootbackend.controller.input.EmployeeInput;
 import com.thay.springbootbackend.entity.EmployeeEntity;
 import com.thay.springbootbackend.service.EmployeeService;
 import org.springframework.graphql.data.method.annotation.Argument;
