@@ -20,7 +20,5 @@ public class EmployeeEntity {
     private String employeeDOJ;
     private String employeeRemarks;
     private Integer employeeAccruedLeaves;
-    private String email;
-    private String password;
     private String roleName;
 }
