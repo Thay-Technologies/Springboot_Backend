@@ -50,8 +50,6 @@ public class EmployeeServiceImpl implements EmployeeService {
         existingEmployee.setEmployeeDOJ(employee.getEmployeeDOJ());
         existingEmployee.setEmployeeRemarks(employee.getEmployeeRemarks());
         existingEmployee.setEmployeeAccruedLeaves(employee.getEmployeeAccruedLeaves());
-        existingEmployee.setEmail(employee.getEmail());
-        existingEmployee.setPassword(employee.getPassword());
         existingEmployee.setRoleName(employee.getRoleName());
 
 

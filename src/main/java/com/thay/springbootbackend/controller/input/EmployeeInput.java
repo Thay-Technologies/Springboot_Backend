@@ -13,8 +13,6 @@ public class EmployeeInput {
     private String employeeDOJ;
     private String employeeRemarks;
     private Integer employeeAccruedLeaves;
-    private String email;
-    private String password;
     private String roleName;
 
 
@@ -27,8 +25,6 @@ public class EmployeeInput {
         employee.setEmployeeDOJ(this.employeeDOJ);
         employee.setEmployeeRemarks(this.employeeRemarks);
         employee.setEmployeeAccruedLeaves(this.employeeAccruedLeaves);
-        employee.setEmail(this.email);
-        employee.setPassword(this.password);
         employee.setRoleName(this.roleName);
         return employee;
     }

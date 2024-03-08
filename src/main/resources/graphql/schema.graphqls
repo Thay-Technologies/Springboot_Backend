@@ -24,8 +24,6 @@ input EmployeeInput {
     employeeDOJ: String
     employeeRemarks: String
     employeeAccruedLeaves: Int
-    email: String
-    password: String
     roleName: String
 }
 input HolidayInput{
@@ -43,8 +41,6 @@ type EmployeeEntity {
     employeeDOJ: String
     employeeRemarks: String
     employeeAccruedLeaves: Int
-    email: String
-    password: String
     roleName: String
 }
 type HolidayEntity{
